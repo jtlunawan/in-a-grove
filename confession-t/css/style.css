@@ -1,0 +1,510 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  overflow: hidden;
+  background-color:black;
+  color: white;
+
+  /*font*/
+  font-family:"Papyrus";
+  letter-spacing: 2.5px;
+  line-height: 2em;
+}
+
+.start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  text-align:center;
+  z-index: 20;
+}
+.startbox {
+  width: 100%;
+  font-size: 200%;
+  animation: show 3s;
+}
+
+#start.slide{
+  animation:slide 3s;
+}
+
+#button{
+  position:absolute;
+  right:3%;
+  bottom:3%;
+  cursor:crosshair;
+  font-size:120%;
+  visibility:hidden;
+  opacity:0.5;
+}
+#button:hover{
+  opacity:1;
+}
+
+#Tmono1{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0%;
+}
+#background1{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0.3;
+}
+
+#Tbutton1{
+  position:absolute;
+  top:26%;
+  font-size: 200%;
+  cursor:crosshair;
+  visibility: hidden;
+}
+.T-1{
+  position: absolute;
+  visibility: hidden;
+  font-size: 120%;
+}
+#Timg1{
+  bottom:0%;
+  left:36%;
+  width:28%;
+}
+#tajomaru1{
+  width:100%;
+}
+#T0-1{top:10%;}
+#T1-1{top:26%;}
+#T2-1{top:34%;}
+#T3-1{top:18%;}
+#Tmono1.vanish{
+  animation: vanish 2s;
+}
+#Timg1.showl{
+  animation: show 1.5s;
+  animation: toLeft 1.5s;
+}
+#T0-1.show,#T1-1.show,#T2-1.show,#T3-1.show,#Tbutton1.show{
+  animation:show 3s;
+}
+#T0-1.vanish,#T1-1.vanish,#T2-1.vanish,#T3-1.vanish{
+  animation:vanish 2s;
+}
+@keyframes slide{
+    from {left:0%;opacity:1;}
+    to {left:-100%;opacity:0;}
+}
+@keyframes toLeft{
+  from{left:100%;}
+  to{left:38%;}
+}
+
+#Tmono2{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0%;
+  visibility: hidden;
+}
+#background2{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0.3;
+}
+#Tbutton2{
+  position:absolute;
+  top:26%;
+  font-size: 200%;
+  cursor:crosshair;
+  visibility: hidden;
+}
+.T-2{
+  position: absolute;
+  visibility: hidden;
+  font-size: 120%;
+  width:70%;
+}
+#Timg2{
+  bottom:-5%;
+  left:17%;
+  width:50%;
+}
+#horseback{
+  width:100%;
+}
+#T0-2{top:10%;}
+#T1-2{top:26%;}
+#T2-2{top:10%;}
+#T3-2{top:34%;}
+#T4-2{top:18%;}
+#Tmono2.show{
+  animation: show 4s;
+}
+#Tmono2.vanish{
+  animation: vanish 2s;
+}
+#Timg2.showl{
+  animation: horse 8s;
+}
+#T0-2.show,#T1-2.show,#T2-2.show,#T3-2.show,#T4-2.show,#Tbutton2.show{
+  animation:show 3s;
+}
+#T0-2.vanish,#T1-2.vanish,#T2-2.vanish,#T3-2.vanish{
+  animation:vanish 2s;
+}
+@keyframes horse{
+  0%{opacity:0;width:24%;left:70%;bottom:60%;}
+  30%{opacity:0.3;width:31.8%;left:50%;bottom:40%;}
+  70%{opacity:0.7;width:42.2%;left:30%;bottom:20%;}
+  100%{opacity:1;width:50%;left:17%;bottom:-5%;}
+}
+
+#Tmono3{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0%;
+  visibility: hidden;
+}
+#Tbutton3{
+  position:absolute;
+  top:26%;
+  font-size: 200%;
+  cursor:crosshair;
+  visibility: hidden;
+}
+.T-3{
+  position: absolute;
+  visibility: hidden;
+  font-size: 120%;
+  width:70%;
+}
+#Timg3{
+  bottom:-12%;
+  left:18%;
+  width:60%;
+}
+#tajomaru2{
+  width:100%;
+}
+#T0-3{top:10%;}
+#T1-3{top:26%;}
+#T2-3{top:18%;}
+#Tmono3.show{
+  animation: show 4s;
+}
+#Tmono3.vanish{
+  animation: vanish 2s;
+}
+#Timg3.showl{
+  animation: show 3s;
+}
+#T0-3.show,#T1-3.show,#T2-3.show,#Tbutton3.show{
+  animation:show 3s;
+}
+#T0-3.vanish,#T1-3.vanish,#T2-3.vanish{
+  animation:vanish 2s;
+}
+
+
+#Tmono4{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0%;
+  visibility: hidden;
+}
+#Tbutton4{
+  position:absolute;
+  top:50%;
+  left:42%;
+  font-size: 150%;
+  cursor:crosshair;
+  visibility: hidden;
+  width:18%;
+}
+.T-4{
+  text-align:right;
+  position: absolute;
+  visibility: hidden;
+  font-size: 120%;
+  width:70%;
+}
+#Timg4-1{
+  bottom:0%;
+  right:5%;
+  width:30%;
+}
+#Timg4-2{
+  bottom:0%;
+  left:5%;
+  width:40%;
+}
+#masago2{width:100%;}
+#kanazawa2{width:100%;}
+#T0-4{top:26%;}
+#T1-4{top:18%;}
+#T2-4{top:34%;}
+#Tmono4.show{
+  animation: show 4s;
+}
+#Tmono4.vanish{
+  animation: vanish 2s;
+}
+#Timg4-1.showl,#Timg4-2.showl{
+  animation: show 3s;
+}
+#Timg4-1.slide4-1{
+  animation: slide4-1 4s;
+}
+#T0-4.show,#T1-4.show,#T2-4.show,#Tbutton4.show{
+  animation:show 3s;
+}
+#T0-4.vanish,#T1-4.vanish,#T2-4.vanish{
+  animation:vanish 2s;
+}
+@keyframes slide4-1{
+    from {right:5%;opacity:1;}
+    to {right:-30%;opacity:0;}
+}
+
+#Tmono5{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0%;
+  visibility: hidden;
+}
+#background51{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0.3;
+}
+#background51.thinner{
+  animation: thinner 3s;
+}
+#background51.vanishb{
+  animation: vanishb 2s;
+}
+@keyframes thinner {
+  from{left:0%;top:0%;width:100%;}
+  to{left:-40%;top:-40%;width:180%;}
+}
+@keyframes vanishb {
+  from{opacity:0.3;}
+  to{opacity:0;}
+}
+#Tbutton5{
+  position:absolute;
+  top:26%;
+  font-size: 200%;
+  text-align:center;
+  cursor:crosshair;
+}
+#Tbutton50{
+  position: absolute;
+  top:80%;
+  left:43%;
+  cursor:crosshair;
+  text-align:center;
+  width:10%;
+  transform:rotate3d(0.6,0.5,1,-100deg);
+  font-size:500%;
+}
+#Tbutton50:hover{
+  opacity:0.5;
+}
+.T-5{
+  position: absolute;
+  visibility: hidden;
+  font-size: 120%;
+  width:70%;
+}
+#Timg51{
+  bottom:0%;
+  left:20%;
+  width:60%;
+}
+#attack{width:100%;}
+#Timg52{
+  top:-65%;
+  right:8%;
+  width:100%;
+}
+#ktie{width:100%;}
+#Timg51.pop{
+  animation: pop 0.5s;
+}
+#Timg51.vanish{
+  animation: vanish 2s;
+}
+#Timg52.show{
+  animation: show 3s;
+}
+@keyframes pop{
+  from{bottom:40%;left:45%;width:0%;}
+  to{bottom:0%;left:20%;width:60%;}
+}
+
+#T0-5{top:10%;}
+#T1-5{top:18%;}
+#T2-5{top:26%;}
+#T3-5{top:34%;}
+#T4-5{top:10%;}
+#T5-5{top:18%;}
+#Tmono5.show{
+  animation: show 4s;
+}
+#Tmono5.vanish{
+  animation: vanish 2s;
+}
+/* #Timg2.showl{
+  animation: horse 12s;
+} */
+#T0-5.show,#T1-5.show,#T2-5.show,#T3-5.show,#T4-5.show,#T5-5.show,#Tbutton5.show{
+  animation:show 3s;
+}
+#T0-5.vanish,#T1-5.vanish,#T2-5.vanish,#T3-5.vanish,#T4-5.vanish{
+  animation:vanish 2.5s;
+}
+
+#Tmono6{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0%;
+  visibility: hidden;
+}
+#background3{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0.5;
+}
+#Tbutton6{
+  position:absolute;
+  top:26%;
+  font-size: 200%;
+  text-align:center;
+  cursor:crosshair;
+  visibility: hidden;
+}
+
+.T-6{
+  position: absolute;
+  visibility: hidden;
+  font-size: 120%;
+  width:70%;
+}
+#Timg61{
+  bottom:0%;
+  left:30%;
+  width:50%;
+}
+#msword{
+  width:100%;
+}
+#Timg62{
+  bottom:0%;
+  left:0%;
+  width:60%;
+}
+#mfight{
+  width:100%;
+}
+#Timg61.show{
+  animation: show 1s;
+}
+#Timg61.vanishc{
+  animation: vanishc 0.8s;
+}
+#Timg62.showc{
+  animation: showc 0.8s;
+}
+@keyframes vanishc{
+  from{opacity:1;left:30%;}
+  to{opacity: 0;left:20%;}
+}
+
+@keyframes showc{
+  from{opacity: 0;left:10%;}
+  to{opacity:1;left:0%;}
+}
+
+#T0-6{top:10%;}
+#T1-6{top:26%;}
+#T2-6{top:10%;}
+#T3-6{top:34%;}
+#T4-6{top:18%;}
+#Tmono6.show{
+  animation: show 4s;
+}
+#Tmono6.vanish{
+  animation: vanish 2s;
+}
+/* #Timg2.showl{
+  animation: horse 12s;
+} */
+#T0-6.show,#T1-6.show,#T2-6.show,#T3-6.show,#T4-6.show,#Tbutton6.show{
+  animation:show 3s;
+}
+#T0-6.vanish,#T1-6.vanish,#T2-6.vanish,#T3-6.vanish{
+  animation:vanish 2.5s;
+}
+
+
+
+
+
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes vanish{
+    from {opacity:1;}
+    to {opacity:0;}
+}
