@@ -1,0 +1,245 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  overflow: hidden;
+  background-color:black;
+  color: white;
+
+  /*font*/
+  font-family:"Papyrus";
+  letter-spacing: 2.5px;
+  line-height: 2em;
+}
+
+#button{
+  position: absolute;
+  bottom:3%;
+  right:3%;
+  opacity:0.5;
+  font-size: 120%;
+  cursor:crosshair;
+}
+#button:hover{
+  opacity: 1;
+}
+#Tmono1{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0%;
+  animation: show 3s;
+}
+#background1{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0.5;
+}
+#Tbutton1{
+  position:absolute;
+  top:26%;
+  font-size: 200%;
+  cursor:crosshair;
+}
+.T-1{
+  position: absolute;
+  visibility: hidden;
+  font-size: 120%;
+}
+#Timg1{
+  bottom:2%;
+  left:28%;
+  width:36%;
+  animation: blink 3s infinite, rise 3s ;
+  visibility: visible;
+}
+#kanazawa1{
+  width:100%;
+}
+#T0-1{top:10%;animation: show 3s;  visibility: visible;}
+#T1-1{top:18%;}
+#Tmono1.vanish{
+  animation: vanish 2s;
+}
+#T1-1.show,#Tbutton1.show{
+  animation:show 3s;
+}
+#T0-1.vanish,#T1-1.vanish{
+  animation:vanish 2.5s;
+}
+@keyframes blink{
+    0% {opacity:1;}
+    50% {opacity:0.3;}
+    100% {opacity:1;}
+}
+@keyframes rise{
+  from{bottom:-60%;}
+  to{bottom:2%;}
+}
+
+#Tmono2{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0%;
+  visibility: hidden;
+}
+#background2{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0.5;
+}
+#Tbutton2{
+  position:absolute;
+  top:18%;
+  font-size: 200%;
+  text-align:justify;
+  cursor:crosshair;
+  visibility: hidden;
+}
+.T-2{
+  position: absolute;
+  visibility: hidden;
+  font-size: 120%;
+  width:70%;
+}
+#Timg21{
+  bottom:-2%;
+  left:20%;
+  width:20%;
+}
+#m1{
+  width:100%;
+}
+#Timg22{
+  bottom:0%;
+  left:30%;
+  width:28%;
+}
+#t1{
+  width:100%;
+}
+#Timg21.show,#Timg22.show{
+  animation: show 3s;
+}
+#T0-2{top:10%;}
+#T1-2{top:18%;}
+#T2-2{top:10%;}
+#Tmono2.show{
+  animation: show 3s;
+}
+#Tmono2.vanish{
+  animation: vanish 2s;
+}
+#T0-2.show,#T1-2.show,#T2-2.show,#T3-2.show,#T4-2.show,#Tbutton2.show{
+  animation:show 3s;
+}
+#T0-2.vanish,#T1-2.vanish,#T2-2.vanish,#T3-2.vanish{
+  animation:vanish 2.5s;
+}
+
+#Tmono3{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0%;
+  visibility: hidden;
+}
+#Tbutton3{
+  position:absolute;
+  top:30%;
+  font-size: 200%;
+  cursor:crosshair;
+  visibility: hidden;
+}
+.T-3{
+  position: absolute;
+  visibility: hidden;
+  font-size: 120%;
+  width:70%;
+  text-align: right;
+}
+#Timg31{
+  bottom:-2%;
+  left:20%;
+  width:20%;
+}
+#Timg32{
+  bottom:0%;
+  left:30%;
+  width:28%;
+}
+#Timg33{
+  bottom:-48%;
+  left:0%;
+  width:40%;
+}
+#m2,#t2,#m3{width:100%;}
+#Timg31.show,#Timg32.show,#Timg33.show{
+  animation: show 3s;
+}
+#Timg31.vanish{
+  animation: vanish 3s;
+}
+#Timg31.enlarge{
+  animation: enlarge1 3s;
+}
+#Timg32.enlarge{
+  animation: enlarge2 3s;
+}
+@keyframes enlarge1{
+  from{bottom:-2%;left:20%;width:20%;}
+    to{bottom:-48%;left:0%;width:40%;}
+}
+@keyframes enlarge2{
+  from{bottom:0%;left:30%;width:28%;}
+    to{bottom:-46%;left:20%;width:56%;}
+}
+#T0-3{top:10%;}
+#T1-3{top:26%;}
+#T2-3{top:10%;}
+#T3-3{top:34%;}
+#T4-3{top:18%;}
+#T5-3{top:24%;}
+#Tmono3.show{
+  animation: show 3s;
+}
+#Tmono3.vanish{
+  animation: vanish 2s;
+}
+#T0-3.show,#T1-3.show,#T3-3.show,#T4-3.show,#T5-3.show,#Tbutton3.show{
+  animation:show 3s;
+}
+#T2-3.show {
+  animation:show 6s;
+}
+#T0-3.vanish,#T1-3.vanish,#T2-3.vanish,#T3-3.vanish,#T4-3.vanish{
+  animation:vanish 2.5s;
+}
+
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes vanish{
+    from {opacity:1;}
+    to {opacity:0;}
+}

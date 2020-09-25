@@ -1,0 +1,237 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  overflow: hidden;
+  background-color:black;
+  color: white;
+
+  /*font*/
+  font-family:"Papyrus";
+  letter-spacing: 2.5px;
+  line-height: 2em;
+  cursor:default;
+}
+
+#imagesDiv{
+  width:100%;
+  height:100%;
+}
+.images{
+  position:absolute;
+  width: 38%;
+  height: 50%;
+}
+#homenDiv{
+  top:0%;
+  left:-12%;
+}
+#womanDiv{
+  bottom:0%;
+  right:12%;
+}
+#monkDiv{
+  bottom:0%;
+  left:14%;
+}
+#woodDiv{
+  top:0%;
+  right:-13%;
+}
+#homenImg,#woodImg,#monkImg,#womanImg{
+  width:100%;
+  height:100%;
+}
+
+/*opening page*/
+#interface{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0%;
+  left:0%;
+
+  font-size: 100%;
+  text-align:center;
+  z-index: 20;
+
+  background-color: rgba(0,0,0,0);
+  margin:0;
+}
+.testi-big-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+
+.testi-container1,.testi-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 38%;
+  height: 100%;
+  position:absolute;
+}
+.testi-container1{
+  left:-100%;
+}
+.testi-container2 {
+  right:-100%;
+}
+.testibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+  height:50%;
+}
+.testp{
+  margin-top:0%;
+  font-size: 140%;
+}
+.testi{
+  text-align: left;
+  padding-left:3%;
+  padding-right:0%;
+  margin-top:5%;
+}
+
+#monk,#woman{
+  border-width:thin;
+  border-top-style: solid;
+  border-top-color: white;
+}
+
+.question-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 24%;
+  height: 100%;
+
+  border-width:thin;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: white;
+  position:absolute;
+  top:-100%;
+
+}
+.questionbox {
+  width:100%;
+  font-size: 100%;
+  margin-top:8%;
+  margin-bottom:8%;
+  cursor: crosshair;
+  text-decoration: underline;
+}
+
+
+.start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  text-align:center;
+  z-index: 20;
+}
+.startbox {
+  width: 100%;
+  -webkit-animation: show 3.5s;
+}
+
+#heading{
+    font-size: 250%;
+}
+#instruction{
+    font-size: 100%;
+    margin-top:2%;
+}
+
+#start.vanish{
+  -webkit-animation: vanish 1s;
+}
+#interfaceT1.rightwards{
+  -webkit-animation: rightwards 1.5s;
+}
+#interfaceT2.leftwards{
+  -webkit-animation: leftwards 1.5s;
+}
+#interfaceQ.downwards {
+  -webkit-animation: downwards 1.5s;
+}
+
+#interface.vanish{
+  -webkit-animation: vanish 1.5s;
+}
+.images.fade{
+  -webkit-animation: fade 1.5s;
+}
+#homenDiv.moveHomen{
+  -webkit-animation: moveHomen 1.5s;
+}
+#monkDiv.moveMonk{
+  -webkit-animation: moveMonk 1.5s;
+}
+#woodDiv.moveWood{
+  -webkit-animation: moveWood 1.5s;
+}
+#womanDiv.moveWoman{
+  -webkit-animation: moveWoman 1.5s;
+}
+
+
+@-webkit-keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes vanish{
+    from {opacity:1;}
+    to {opacity:0;}
+}
+@-webkit-keyframes fade{
+    from {opacity:1;}
+    to {opacity:0.5;}
+}
+@-webkit-keyframes downwards {
+    from { top:-100%; }
+    to { top:0%; }
+}
+@-webkit-keyframes leftwards {
+    from { right:-100%; }
+    to { right:0%; }
+}
+@-webkit-keyframes rightwards {
+    from { left:-100%; }
+    to { left:0%; }
+}
+@-webkit-keyframes moveHomen {
+    from { left:-12%; }
+    to { left:0%; }
+}
+@-webkit-keyframes moveMonk {
+    from { left:14%; }
+    to { left:0%; }
+}
+@-webkit-keyframes moveWood {
+    from { right:-13%; }
+    to { right:0%; }
+}
+@-webkit-keyframes moveWoman {
+    from { right:12%; }
+    to { right:0%; }
+}

@@ -1,0 +1,200 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  overflow: hidden;
+  background-color:black;
+  color: white;
+
+  /*font*/
+  font-family:"Papyrus";
+  letter-spacing: 2.5px;
+  line-height: 2em;
+}
+
+.title{
+  position: absolute;
+  font-size: 150%;
+}
+#title1{ top:38%;left:44.5%;}
+#title2{ top:46%;left:40%;}
+/* background image */
+#bg1{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0.5;
+}
+/* next scene button */
+#button1{
+  font-size:120%;
+  position: absolute;
+  bottom:3%;
+  right:3%;
+  cursor:crosshair;
+  opacity:0.5;
+}
+#button1:hover{
+  opacity:1;
+}
+
+/* character image needs update */
+#timg1,#kimg1,#mimg1{
+  position:absolute;
+  width:20%;
+  cursor:crosshair;
+}
+#timg1:hover,#kimg1:hover,#mimg1:hover{
+  opacity:0.6;
+}
+#timg1{
+  top:30%;
+  left:12%;
+}
+#kimg1{
+  top:30%;
+  left:68%;
+}
+#mimg1{
+  top:56%;
+  left:41%;
+}
+#tajomaru1,#kanazawa1,#masago1{
+  width:100%;
+}
+/* #timg1:hover,#kimg1:hover,#mimg1:hover{
+  opacity:1;
+} */
+
+/* confession container */
+.Tcontainer1,.Kcontainer1,.Mcontainer1{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin:0%;
+  visibility:hidden;
+}
+/* finish reading button */
+#tbutton1,#kbutton1,#mbutton1{
+  position:absolute;
+  font-size: 200%;
+  cursor:crosshair;
+  visibility: hidden;
+  width:5%;
+  left:14.5%;
+  text-align:center;
+}
+#tbutton1{
+  top:26%;
+  left:80%;
+}
+#kbutton1{
+  top:18%;
+}
+#mbutton1{
+  top:26%;
+}
+
+.t1,.k1,.m1{
+  position: absolute;
+  visibility: hidden;
+  font-size: 120%;
+  width:70%;
+}
+.t1{
+  text-align: right;
+}
+
+/* tajomaru1 */
+#t0-1{top:10%;}
+#t1-1{top:26%;}
+#t2-1{top:18%;}
+#t3-1{top:34%;}
+#t4-1{top:18%;}
+#Tscene1.vanish{
+  animation: vanish 2s;
+}
+#t0-1.show,#t1-1.show,#t2-1.show,#t3-1.show,#t4-1.show,#tbutton1.show{
+  animation:show 4s;
+}
+#t0-1.vanish,#t1-1.vanish,#t2-1.vanish,#t3-1.vanish,#t4-1.vanish,#tbutton1.vanish{
+  animation:vanish 3s;
+}
+/* kanazawa1 */
+#k0-1{top:26%;}
+#k1-1{top:18%;}
+#k2-1{top:34%;}
+#k3-1{top:10%;}
+#Kscene1.vanish{
+  animation: vanish 2s;
+}
+#k0-1.show,#k1-1.show,#k2-1.show,#k3-1.show,#kbutton1.show{
+  animation:show 4s;
+}
+#k0-1.vanish,#k1-1.vanish,#k2-1.vanish,#k3-1.vanish,#kbutton1.vanish{
+  animation:vanish 3s;
+}
+/* masago1 */
+#m0-1{top:10%;}
+#m1-1{top:26%;}
+#m2-1{top:34%;}
+#m3-1{top:18%;}
+#Mscene1.vanish{
+  animation: vanish 2s;
+}
+#m0-1.show,#m1-1.show,#m2-1.show,#m3-1.show,#mbutton1.show{
+  animation:show 4s;
+}
+#m0-1.vanish,#m1-1.vanish,#m2-1.vanish,#m3-1.vanish,#mbutton1.vanish{
+  animation:vanish 3s;
+}
+/* go to next scene */
+#Scene1{
+  animation:show 2s;
+}
+#Scene1.vanish{
+  animation:vanish 2s;
+}
+
+#tc01,#mc01,#kc01,#kc02{
+  position: absolute;
+  opacity:0;
+  visibility:hidden;
+  width:55%;
+}
+#tc1,#mc1,#kc1,#kc2{width:100%;}
+#tc01{
+  bottom:0%;;
+  left:5%;
+}
+#mc01,#kc02{
+  bottom:-5%;;
+  left:6%;
+}
+#kc01{
+  bottom:-2%;;
+  left:8%;
+  width:40%;
+}
+#tc01.show,#mc01.show,#kc01.show,#kc02.show{
+  animation: show 3s;
+}
+#kc01.vanish{animation:vanish 2s;}
+
+
+
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes vanish{
+    from {opacity:1;}
+    to {opacity:0;}
+}
